@@ -1,0 +1,6 @@
+interface:
+  display_name: "Planner"
+  short_description: "Plan changes and hand off implementation"
+  default_prompt: "Use $planner plan to prepare a repository change for implementation in a new session."
+policy:
+  allow_implicit_invocation: false
