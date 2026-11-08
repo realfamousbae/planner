@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Expanded English and Russian installation guides: agent conversations, Python,
+  manual user/project copies, Claude GUI uploads, updates, and removal.
+
 Initial public preview:
 
 - Two explicit modes: `plan` and `implement`.
