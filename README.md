@@ -184,6 +184,10 @@ does not remove task plans from repositories.
 
 ## Plan in the first session
 
+When the host exposes session renaming, Planner titles the planning session
+`Plan P: <task name>` and the implementation session `Plan I: <task name>`.
+Otherwise it suggests a title and continues.
+
 Select the planning model, preferably Sol, and enable native Plan Mode. Then:
 
 ```text

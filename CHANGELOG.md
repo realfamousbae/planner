@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Name planning sessions `Plan P: <task>` and implementation sessions
+  `Plan I: <task>` when the host exposes a permitted title control; otherwise
+  suggest the title.
 - When active settings are unavailable, ask for a simple confirmation of the
   expected model and effort before requesting different values.
 - Skip repeated model and effort questions when reliable active session settings

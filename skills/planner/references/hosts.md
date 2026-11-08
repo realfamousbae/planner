@@ -7,6 +7,9 @@ available to the user is not automatically an agent-callable tool.
 ## Codex
 
 - Invocation: `$planner plan <task>` or `$planner implement <instructions>`.
+- When the current chat title tool is exposed and permitted, use it to set the
+  mode-specific `Plan P: <task>` or `Plan I: <task>` title. Target only the current chat; do not create a chat or
+  attempt to rename one by printing a command.
 - `agents/openai.yaml` disables implicit invocation. Do not edit user config.
 - The native `/plan` command enters Plan Mode in supported surfaces; in the app
   use its Plan control. Use the actual mode state or ask the user to confirm it.

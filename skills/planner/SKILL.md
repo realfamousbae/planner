@@ -29,6 +29,13 @@ Resolve actual available model names instead of guessing provider IDs.
 
 ## Shared contract
 
+- When a concise task name is known, title the current session `Plan P: <task>`
+  for `plan` or `Plan I: <task>` for `implement`, in the user's language,
+  using an exposed native session-title capability. For
+  `plan`, derive it from the user's task; for `implement`, derive it from the
+  approved `PLANNER.md`. Use the same task wording across both sessions when
+  practical. Respect an explicitly requested title. If renaming is unavailable
+  or prohibited, suggest the title once and continue; do not block the workflow.
 - Planning requires the host's native Plan Mode. Never emulate it with a prompt.
 - Check the current model and effort at the start of each mode as described in
   session setup. Continue without a question when both are reliably known and

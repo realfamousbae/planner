@@ -48,6 +48,7 @@ are review results, not conversations executed against separate models.
 | Active model and effort match the recommended or agreed pair | Report the reliably observed match and continue without asking again. |
 | Active settings differ | Ask whether to keep or switch the known mismatch. |
 | Both settings unavailable | Ask the user to confirm whether the picker shows the expected pair; if not, ask for actual values and whether to keep them or switch. Record a yes as user-reported. |
+| Session title capability available or unavailable | Use `Plan P: <task>` for planning and `Plan I: <task>` for implementation when permitted; otherwise suggest the title and continue without blocking. |
 | One setting unavailable | Ask about the missing value without re-confirming the known one; do not infer it from defaults. |
 | `plan` while native Plan Mode is absent | Planning stops and asks for native mode; no read-only emulation or draft-file workaround. |
 | Effort control unavailable or change applies next turn | Session guidance requires manual change/confirmation and yields when necessary; it does not claim a printed command changed settings. |
