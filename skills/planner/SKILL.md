@@ -30,8 +30,9 @@ Resolve actual available model names instead of guessing provider IDs.
 ## Shared contract
 
 - Planning requires the host's native Plan Mode. Never emulate it with a prompt.
-- Ask for effort at the start of each mode, unless explicitly selected in the
-  current request. Wait for the answer; elapsed time is not a selection.
+- Check the current model and effort at the start of each mode as described in
+  session setup. Continue without a question when both are reliably known and
+  match the recommended or already agreed configuration.
 - The user opens the implementation session manually. Saving an approved plan
   is the final action of `plan`, not permission to begin implementation.
 - Keep one active task in repository-root `PLANNER.md`. No archives or sidecar

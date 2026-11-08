@@ -44,7 +44,9 @@ are review results, not conversations executed against separate models.
 
 | Scenario / input | Required route verified in the instructions |
 | --- | --- |
-| `plan Add pagination`, revise then approve | Setup asks effort; planning investigates in native mode, revises until approval of the exact revision, saves only after mode exit, then hands off. |
+| `plan Add pagination`, revise then approve | Setup checks model and effort; planning investigates in native mode, revises until approval of the exact revision, saves only after mode exit, then hands off. |
+| Active model and effort match the recommended or agreed pair | Report the reliably observed match and continue without asking again. |
+| Active settings differ, or either value is unavailable | Ask whether to keep or switch a known mismatch; ask the user to report missing values, and do not infer a match from defaults. |
 | `plan` while native Plan Mode is absent | Planning stops and asks for native mode; no read-only emulation or draft-file workaround. |
 | Effort control unavailable or change applies next turn | Session guidance requires manual change/confirmation and yields when necessary; it does not claim a printed command changed settings. |
 | Model has no effort control | Explain unsupported effort and ask for explicit native-default selection or another model; do not invent medium/high. |
@@ -55,7 +57,7 @@ are review results, not conversations executed against separate models.
 | HEAD differs or affected code has changed | Compare actual components and assumptions, including dirty changes; do not accept or reject solely by HEAD. |
 | Extra instructions contradict a public interface decision | Pause dependent work, agree the concrete revision, update the approval record. |
 | Local technical detail differs from plan | Adapt autonomously; material architectural/scope changes require discussion. |
-| Implementation interrupted after a stage | Update results, blockers and next action; the next invocation verifies artifacts and resumes with a fresh effort selection. |
+| Implementation interrupted after a stage | Update results, blockers and next action; the next invocation verifies artifacts and checks session settings. |
 | New task over an unfinished or completed plan | Clarify revision/replacement for unfinished work; replace completed work only when the new plan is approved; no archive. |
 | Concurrent changes to PLANNER.md | Re-read before updating, preserve changes, resolve ambiguity instead of writing a stale whole-file copy. |
 | User only mentions the command, or asks for an ordinary code fix | Explicit invocation metadata and the body guard prevent intentional workflow activation from examples or unrelated requests. |

@@ -66,4 +66,4 @@ limitations in the user's language.
 If incomplete, record a continuation point and report what remains. Recommend
 the same executor/effort unless concrete evidence supports a change; explain
 any stronger recommendation. Give the appropriate `planner implement` command
-for a new session. The next invocation reads progress and asks for effort again.
+for a new session. The next invocation reads progress and checks session settings.

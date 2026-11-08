@@ -13,7 +13,7 @@ carries the task's decisions, acceptance criteria, and implementation progress.
 
 Default profile: **Sol / high → Terra / medium**. This is a configurable starting
 point, not a benchmark result or a guarantee of lower total cost. The skill uses
-available models, discusses alternatives, and asks for effort in both stages.
+available models, checks session settings, and discusses alternatives when needed.
 
 ```text
 Session 1                         Session 2
@@ -194,7 +194,8 @@ $planner plan Add pagination to the activity feed.
 /planner plan Add pagination to the activity feed.
 ```
 
-The skill asks for effort (high by default), investigates the repository, and
+The skill checks the session model and effort (Sol / high is recommended), then
+investigates the repository and
 discusses requirements and design. It proposes an executor (Terra / medium by
 default) and explains any stronger or cheaper recommendation. In other model
 ecosystems it proposes available alternatives for confirmation. If it cannot
@@ -231,11 +232,14 @@ You may append instructions, for example:
 $planner implement Use high effort. Preserve compatibility with existing clients.
 ```
 
-The skill reads the plan, asks for effort (the agreed value, usually medium),
-and checks it against current code. An explicit effort in the current request
-counts as the selection. When no session control is exposed to the agent, it
-guides you through manual switching and waits for confirmation. Displaying a
-command does not execute it. Persistent global preferences are not changed.
+The skill reads the plan, checks the session settings against the agreed pair,
+and checks the plan against current code. If reliable active settings match, it
+continues without a repeated question. If they differ, it asks whether to keep
+them or switch; if settings are unavailable, it asks you to report them. An
+explicit choice in the current request does not need repeating, but is not proof
+that the setting is active. When switching requires manual action, the skill
+waits for confirmation. Displaying a command does not execute it. Persistent
+global preferences are not changed.
 
 Local implementation decisions are autonomous. Changes to scope, architecture,
 or public interfaces are discussed and recorded before dependent work continues.

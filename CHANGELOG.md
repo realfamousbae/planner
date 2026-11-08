@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Skip repeated model and effort questions when reliable active session settings
+  already match the recommended or agreed configuration.
 - Expanded English and Russian installation guides: agent conversations, Python,
   manual user/project copies, Claude GUI uploads, updates, and removal.
 

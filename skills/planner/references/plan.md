@@ -70,7 +70,7 @@ for a **new session in the same repository/worktree**. For example, localize:
 > Planning is complete and PLANNER.md is saved. Open a new session on the
 > agreed model with the agreed effort, then send `$planner implement` (Codex)
 > or `/planner implement` (Claude Code). The new session will read the plan and
-> confirm effort before implementing. You may append extra instructions.
+> check the session settings before implementing. You may append extra instructions.
 
 If saving is still blocked, say the plan is approved but **not yet saved** and
 request the required mode switch; do not send the user to implementation yet.

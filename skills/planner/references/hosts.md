@@ -58,6 +58,7 @@ Sources: [skills](https://code.claude.com/docs/en/skills),
 Use the installed host's skill invocation mechanism and discover native planning
 and session controls. Honor the explicit-invocation rule even if the host has no
 metadata switch for it. Do not assume Codex/Claude commands work elsewhere.
-Ask for unavailable model/effort information and agree an available pair.
+Ask for unavailable model/effort information and resolve the pair as described
+in session setup.
 Without native Plan Mode, stop `plan` with an explanation. Without an effort
 control, follow the explicit unsupported-effort choice in session setup.

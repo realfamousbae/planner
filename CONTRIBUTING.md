@@ -29,7 +29,7 @@ Keep shared instructions in `skills/planner/SKILL.md`, mode details in
 settings in adapters; the installer adds Claude's explicit-only metadata.
 Do not hardcode a changing model catalog or claim measured savings without data.
 
-Preserve explicit effort selection, native Plan Mode, approval of the actual
+Preserve reliable session-settings checks, native Plan Mode, approval of the actual
 plan revision, save-only handoff, and continuation from recorded progress.
 Exercise affected scenarios from [validation notes](docs/VALIDATION.md).
 Distinguish prompt review from actual model-driven results in your PR.

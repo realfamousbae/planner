@@ -6,21 +6,24 @@ For `implement`, read the root `PLANNER.md` first to learn the agreed executor
 and effort. For `plan`, use Sol / high unless the user chooses otherwise.
 Before substantive investigation or implementation:
 
-1. Identify the host, current model, supported effort levels, and available
-   models from trustworthy session metadata or a supported host capability.
-   Do not infer the active model from your own prose or from global defaults.
-   If unavailable, ask the user to report the relevant picker/status values.
-   A public model catalog alone does not prove account access.
-2. Show the recommended model and effort alongside any known active settings.
-   If they differ, ask whether to keep the active model or switch manually.
-   Already explicit choices in the current request need no repeated question.
-3. Ask which supported effort to use, presenting the recommendation as the
-   default. Do not continue dependent work before an answer. If supported levels
-   are unknown, ask for the picker's choices rather than inventing options.
-4. Apply the user's effort through a native, session-scoped mechanism only if
-   one is actually exposed to you. Otherwise give manual instructions and wait
-   for the user's confirmation before substantive work. Merely printing a slash
-   command or running it in a shell does not apply a chat setting.
+1. Identify the host and look for the current model and effort in trustworthy
+   session metadata or a supported host capability available to the agent.
+   Do not infer active settings from your own prose, global defaults, a model
+   catalog, or a shell command that starts a separate session. A public catalog
+   alone does not prove account access. Discover supported options when needed.
+2. Compare both active values with the recommended pair for `plan` or the
+   agreed pair in `PLANNER.md` for `implement`. If both reliably match, briefly
+   report the match and proceed without asking the user to select them again.
+3. If a known active value differs, present the active and recommended values
+   and ask whether to keep the current configuration or switch. Respect an
+   explicit choice in the current request without asking for that choice again.
+   If either active value cannot be determined, ask the user to report the
+   missing picker/status values; do not invent supported options or claim a
+   match. Wait for the answer before dependent work.
+4. If a change is needed, use a native, session-scoped mechanism only if it is
+   exposed to you. Otherwise give manual instructions and wait for the user's
+   confirmation before substantive work. Merely printing a slash command or
+   running it in a shell does not apply a chat setting.
 
 Distinguish **recommended**, **user-selected**, and **confirmed active** settings.
 Confirmation can come from host state or the user's report; record its source.

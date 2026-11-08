@@ -67,6 +67,6 @@ None.
 - Completed: no implementation stages.
 - Blockers: none recorded; validate assumptions against the checkout first.
 - Next action: inspect the existing parser and CLI tests, then implement stage 1.
-- Continuation configuration: Terra / medium, subject to fresh effort selection.
+- Continuation configuration: Terra / medium, subject to a session settings check.
 - New Codex session: `$planner implement`.
 - New Claude Code session: `/planner implement`.
