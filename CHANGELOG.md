@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- When active settings are unavailable, ask for a simple confirmation of the
+  expected model and effort before requesting different values.
 - Skip repeated model and effort questions when reliable active session settings
   already match the recommended or agreed configuration.
 - Expanded English and Russian installation guides: agent conversations, Python,

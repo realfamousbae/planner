@@ -46,7 +46,9 @@ are review results, not conversations executed against separate models.
 | --- | --- |
 | `plan Add pagination`, revise then approve | Setup checks model and effort; planning investigates in native mode, revises until approval of the exact revision, saves only after mode exit, then hands off. |
 | Active model and effort match the recommended or agreed pair | Report the reliably observed match and continue without asking again. |
-| Active settings differ, or either value is unavailable | Ask whether to keep or switch a known mismatch; ask the user to report missing values, and do not infer a match from defaults. |
+| Active settings differ | Ask whether to keep or switch the known mismatch. |
+| Both settings unavailable | Ask the user to confirm whether the picker shows the expected pair; if not, ask for actual values and whether to keep them or switch. Record a yes as user-reported. |
+| One setting unavailable | Ask about the missing value without re-confirming the known one; do not infer it from defaults. |
 | `plan` while native Plan Mode is absent | Planning stops and asks for native mode; no read-only emulation or draft-file workaround. |
 | Effort control unavailable or change applies next turn | Session guidance requires manual change/confirmation and yields when necessary; it does not claim a printed command changed settings. |
 | Model has no effort control | Explain unsupported effort and ask for explicit native-default selection or another model; do not invent medium/high. |

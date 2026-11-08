@@ -235,7 +235,8 @@ $planner implement Use high effort. Preserve compatibility with existing clients
 The skill reads the plan, checks the session settings against the agreed pair,
 and checks the plan against current code. If reliable active settings match, it
 continues without a repeated question. If they differ, it asks whether to keep
-them or switch; if settings are unavailable, it asks you to report them. An
+them or switch; if settings are unavailable, it asks you to confirm whether the
+picker shows the expected pair, and asks for actual values if it does not. An
 explicit choice in the current request does not need repeating, but is not proof
 that the setting is active. When switching requires manual action, the skill
 waits for confirmation. Displaying a command does not execute it. Persistent

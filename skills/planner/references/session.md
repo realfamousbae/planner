@@ -17,9 +17,15 @@ Before substantive investigation or implementation:
 3. If a known active value differs, present the active and recommended values
    and ask whether to keep the current configuration or switch. Respect an
    explicit choice in the current request without asking for that choice again.
-   If either active value cannot be determined, ask the user to report the
-   missing picker/status values; do not invent supported options or claim a
-   match. Wait for the answer before dependent work.
+   If either active value cannot be determined, state which values are unknown
+   and ask the user to check the picker/status and confirm whether it shows
+   the expected pair, for example: "Does the picker show Terra / medium?"
+   Offer a clear yes / no choice using the host's question tool when available
+   and permitted, otherwise ask in chat. A yes confirms the pair as user-reported;
+   on no, ask for the actual values and whether to keep them or switch. If only
+   one value is unknown, ask about that value without re-confirming the known
+   one. Do not invent supported options or claim an unverified match. Wait for
+   the answer before dependent work; a preselected option is not an answer.
 4. If a change is needed, use a native, session-scoped mechanism only if it is
    exposed to you. Otherwise give manual instructions and wait for the user's
    confirmation before substantive work. Merely printing a slash command or
