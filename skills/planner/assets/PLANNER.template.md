@@ -53,7 +53,7 @@ record compatible additional instructions without pretending they were in v1.>
 - Blockers / limitations: <none or evidence and unresolved issue>
 - Next action: <precise first remaining action, relevant files and prerequisites>
 - Continuation model / effort: <accepted pair, or agreed change and rationale>
-- Next session: <host-specific planner implement invocation>
+- Next session, only if a handoff is needed: <host-specific planner implement invocation>
 
 <During execution record meaningful check results and continuation facts here,
 without copying the conversation or storing secrets.>

@@ -251,6 +251,9 @@ answers; otherwise the skill asks in chat.
 
 Local implementation decisions are autonomous. Changes to scope, architecture,
 or public interfaces are discussed and recorded before dependent work continues.
+The implementation session continues through the remaining stages and checks;
+an intermediate milestone is not a reason to start another session. If work
+must pause, it records why and how to continue, normally in the same session.
 Stages, real check results, and the next action are written back to `PLANNER.md`,
 so another `implement` session can resume. Plan approval does not grant extra
 permissions to deploy or publish.

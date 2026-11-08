@@ -35,6 +35,11 @@ a new expensive-model session when the user can resolve the issue here.
 
 Execute approved stages in dependency order, using repository conventions.
 Choose local implementation details and repair ordinary defects autonomously.
+Continue through all remaining stages and appropriate validation in the current
+session. A stage completion, passing intermediate checks, task size, or a desire
+to conserve context is not itself a reason to stop or start a new session.
+Provide progress updates without ending the work. Respect user requests to pause
+and host limits; do not claim completion until acceptance criteria are met.
 When blocked by a design gap, explain the evidence, propose options and a
 recommendation, and ask the user to decide. Pause dependent work; independent
 approved work may continue if it cannot prejudge that decision.
@@ -63,7 +68,12 @@ Set status to completed only when the acceptance criteria are satisfied. Record
 the final results in the same file. Report changes, verification, and meaningful
 limitations in the user's language.
 
-If incomplete, record a continuation point and report what remains. Recommend
-the same executor/effort unless concrete evidence supports a change; explain
-any stronger recommendation. Give the appropriate `planner implement` command
-for a new session. The next invocation reads progress and checks session settings.
+If work must stop before completion because of a real blocker, user request, or
+host constraint, record what remains, the concrete reason, and the next action.
+Ask for missing input if needed; otherwise explain how to resume in this same
+session. Do not require a new session or repeat setup merely because a stage
+ended. Suggest a new session and give a `planner implement` command only when
+the user requests a handoff or the current session cannot reasonably continue;
+explain why. For an actual handoff, recommend the same executor/effort unless
+concrete evidence supports a change, and explain any stronger recommendation.
+The next invocation reads progress and checks session settings.

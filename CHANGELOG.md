@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Continue implementation and validation in the current session instead of
+  suggesting a new session after an intermediate stage; explain real blockers.
 - Prefer a permitted interactive question tool for session setting confirmation,
   including asynchronous questions when supported by the host.
 - Name planning sessions `Plan P: <task>` and implementation sessions
