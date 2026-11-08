@@ -254,6 +254,9 @@ or public interfaces are discussed and recorded before dependent work continues.
 The implementation session continues through the remaining stages and checks;
 an intermediate milestone is not a reason to start another session. If work
 must pause, it records why and how to continue, normally in the same session.
+In Codex, explicitly request a persistent goal with `$planner implement Create
+a Goal to complete the approved plan` when you want supported automatic
+continuation across turns. Goals do not guarantee uninterrupted work.
 Stages, real check results, and the next action are written back to `PLANNER.md`,
 so another `implement` session can resume. Plan approval does not grant extra
 permissions to deploy or publish.

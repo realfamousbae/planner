@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Support an explicitly requested Codex Goal for implementation across turns.
 - Make completing all approved implementation stages the main skill contract;
   pause for material decisions or actual blockers, not routine milestones.
 - Continue implementation and validation in the current session instead of

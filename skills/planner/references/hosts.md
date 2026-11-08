@@ -7,6 +7,14 @@ available to the user is not automatically an agent-callable tool.
 ## Codex
 
 - Invocation: `$planner plan <task>` or `$planner implement <instructions>`.
+- For `implement`, if the user explicitly requests a persistent Codex Goal,
+  use the exposed native goal capability when available and permitted, scoped
+  to completing the approved `PLANNER.md` and its validation. Check for an
+  existing goal first and do not replace an unrelated active goal. Preserve the
+  plan's scope and required user decisions; do not set a budget unless requested.
+  A goal can enable continuation across turns but does not guarantee it. Do not
+  create a goal merely because this skill was invoked. If the native capability
+  is unavailable, explain and offer the host's supported `/goal` control.
 - When the current chat title tool is exposed and permitted, use it to set the
   mode-specific `Plan P: <task>` or `Plan I: <task>` title. Target only the current chat; do not create a chat or
   attempt to rename one by printing a command.

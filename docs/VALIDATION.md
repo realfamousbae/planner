@@ -65,6 +65,7 @@ are review results, not conversations executed against separate models.
 | Stage completes with work remaining and no blocker | Continue implementation and validation in the current session; intermediate test success does not end the task. |
 | Material architectural decision unresolved | Explain the decision and ask the user; continue independent work where it does not prejudge the answer. |
 | Implementation blocked or paused | Record the actual reason and next action; resume in the current session where possible. Suggest a new session only for an actual handoff or session constraint. |
+| Explicit request for Codex Goal | Check for an existing goal; when permitted, create an implementation goal scoped to the approved plan and checks. Do not create one on ordinary skill invocation alone. |
 | New task over an unfinished or completed plan | Clarify revision/replacement for unfinished work; replace completed work only when the new plan is approved; no archive. |
 | Concurrent changes to PLANNER.md | Re-read before updating, preserve changes, resolve ambiguity instead of writing a stale whole-file copy. |
 | User only mentions the command, or asks for an ordinary code fix | Explicit invocation metadata and the body guard prevent intentional workflow activation from examples or unrelated requests. |
