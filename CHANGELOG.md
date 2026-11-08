@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Avoid framing every implementation stage as a handoff; record progress when
+  useful and continue to the next task.
 - Support an explicitly requested Codex Goal for implementation across turns.
 - Make completing all approved implementation stages the main skill contract;
   pause for material decisions or actual blockers, not routine milestones.

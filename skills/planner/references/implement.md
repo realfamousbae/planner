@@ -51,7 +51,10 @@ Ask about material changes to architecture, public interfaces, scope, or other
 decisions that would alter the approved plan. Do not ask about routine coding,
 ordinary debugging, or choices already settled by that plan.
 
-After meaningful stages or before a handoff, re-read and update `PLANNER.md`:
+Keep working across stages. Record progress when useful for continuity, and
+before an actual pause, handoff, or completion; do not turn each stage into a
+handoff. After a progress update, proceed with the next outstanding task.
+Before updating `PLANNER.md`, re-read it and record relevant facts:
 
 - Stage status and concrete result; do not claim completion before validation.
 - Checks actually run, outcomes, and any checks not run with the reason.

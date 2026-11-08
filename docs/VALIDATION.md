@@ -63,6 +63,7 @@ are review results, not conversations executed against separate models.
 | Local technical detail differs from plan | Adapt autonomously; material architectural/scope changes require discussion. |
 | Implementation interrupted after a stage | Update results, blockers and next action; the next invocation verifies artifacts and checks session settings. |
 | Stage completes with work remaining and no blocker | Continue implementation and validation in the current session; intermediate test success does not end the task. |
+| Progress is recorded during implementation | Proceed to the next remaining stage; a checkpoint does not mean the task or turn is finished. |
 | Material architectural decision unresolved | Explain the decision and ask the user; continue independent work where it does not prejudge the answer. |
 | Implementation blocked or paused | Record the actual reason and next action; resume in the current session where possible. Suggest a new session only for an actual handoff or session constraint. |
 | Explicit request for Codex Goal | Check for an existing goal; when permitted, create an implementation goal scoped to the approved plan and checks. Do not create one on ordinary skill invocation alone. |
