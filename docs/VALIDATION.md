@@ -63,6 +63,7 @@ are review results, not conversations executed against separate models.
 | Local technical detail differs from plan | Adapt autonomously; material architectural/scope changes require discussion. |
 | Implementation interrupted after a stage | Update results, blockers and next action; the next invocation verifies artifacts and checks session settings. |
 | Stage completes with work remaining and no blocker | Continue implementation and validation in the current session; intermediate test success does not end the task. |
+| Material architectural decision unresolved | Explain the decision and ask the user; continue independent work where it does not prejudge the answer. |
 | Implementation blocked or paused | Record the actual reason and next action; resume in the current session where possible. Suggest a new session only for an actual handoff or session constraint. |
 | New task over an unfinished or completed plan | Clarify revision/replacement for unfinished work; replace completed work only when the new plan is approved; no archive. |
 | Concurrent changes to PLANNER.md | Re-read before updating, preserve changes, resolve ambiguity instead of writing a stale whole-file copy. |

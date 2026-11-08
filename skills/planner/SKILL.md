@@ -29,6 +29,12 @@ Resolve actual available model names instead of guessing provider IDs.
 
 ## Shared contract
 
+- In `implement`, execute the entire approved plan and its required checks in
+  the current session. After each stage or progress update, proceed to the next
+  unfinished stage; do not end the turn merely because one stage is done. Ask
+  the user only for a material unresolved architectural decision, a genuine
+  blocker, or an action requiring authorization. Handle routine decisions and
+  fixes independently. See [implementation](references/implement.md).
 - When a concise task name is known, title the current session `Plan P: <task>`
   for `plan` or `Plan I: <task>` for `implement`, in the user's language,
   using an exposed native session-title capability. For

@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Make completing all approved implementation stages the main skill contract;
+  pause for material decisions or actual blockers, not routine milestones.
 - Continue implementation and validation in the current session instead of
   suggesting a new session after an intermediate stage; explain real blockers.
 - Prefer a permitted interactive question tool for session setting confirmation,

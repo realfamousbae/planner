@@ -40,9 +40,16 @@ session. A stage completion, passing intermediate checks, task size, or a desire
 to conserve context is not itself a reason to stop or start a new session.
 Provide progress updates without ending the work. Respect user requests to pause
 and host limits; do not claim completion until acceptance criteria are met.
+After updating progress or running intermediate tests, select the next unfinished
+stage and continue immediately. Before a final response, check the entire plan:
+if executable stages or required checks remain and no real blocker, user pause,
+or host constraint prevents them, continue working instead of finalizing.
 When blocked by a design gap, explain the evidence, propose options and a
 recommendation, and ask the user to decide. Pause dependent work; independent
 approved work may continue if it cannot prejudge that decision.
+Ask about material changes to architecture, public interfaces, scope, or other
+decisions that would alter the approved plan. Do not ask about routine coding,
+ordinary debugging, or choices already settled by that plan.
 
 After meaningful stages or before a handoff, re-read and update `PLANNER.md`:
 
