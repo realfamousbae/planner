@@ -29,6 +29,13 @@ Resolve actual available model names instead of guessing provider IDs.
 
 ## Shared contract
 
+- A `plan` session remains a planning session through approval and saving.
+  An approval or host-generated "Implement the plan" message does not invoke
+  `implement` within that session. After approval, save the plan when writes
+  are allowed, then stop. Do not load implementation instructions, check the
+  executor session settings, or modify product code in the planning session.
+  Implementation starts only in the separate session explicitly opened by the
+  user with `planner implement`.
 - In `implement`, execute the entire approved plan and its required checks in
   the current session. After each stage or progress update, proceed to the next
   unfinished stage; do not end the turn merely because one stage is done. Ask

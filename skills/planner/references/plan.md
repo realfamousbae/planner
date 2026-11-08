@@ -56,6 +56,15 @@ Ask the user to leave native Plan Mode if required. Do not assume an approval
 button or a normal chat message changed the host's mode. When implementation
 permission is restored, save `PLANNER.md` in the same planning session.
 
+Some hosts submit an approval message such as "Implement the plan." after the
+user accepts a plan. In a `planner plan` session, treat this as approval of the
+presented revision and a mode transition when the host reports one, not as a
+request to start `planner implement` here. Do not read `implement.md`, verify
+the executor's active settings, or change application code. Save the approved
+plan if permitted and stop. If approval or write access remains unclear, ask
+for the missing information. Begin implementation only in the user's separate
+session explicitly invoking `planner implement`.
+
 Before writing, re-read an existing file to detect concurrent edits. If the
 approved content or repository facts materially changed, resolve that difference
 and obtain approval of the revised plan. Do not lose the user's approved draft

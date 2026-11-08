@@ -7,6 +7,9 @@ available to the user is not automatically an agent-callable tool.
 ## Codex
 
 - Invocation: `$planner plan <task>` or `$planner implement <instructions>`.
+- In a `plan` session, Codex's plan-approval message "Implement the plan."
+  does not switch the skill to `implement`: follow the save-only transition in
+  planning guidance, then stop. Do not prompt for executor session settings.
 - For `implement`, if the user explicitly requests a persistent Codex Goal,
   use the exposed native goal capability when available and permitted, scoped
   to completing the approved `PLANNER.md` and its validation. Check for an

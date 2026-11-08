@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Keep Codex's `Implement the plan.` approval in the planning session's
+  save-only transition; start implementation only in the separate session.
 - Avoid framing every implementation stage as a handoff; record progress when
   useful and continue to the next task.
 - Support an explicitly requested Codex Goal for implementation across turns.

@@ -56,6 +56,7 @@ are review results, not conversations executed against separate models.
 | Model has no effort control | Explain unsupported effort and ask for explicit native-default selection or another model; do not invent medium/high. |
 | Sol/Terra unavailable or candidate list hidden | Ask for available choices, propose confirmed alternatives, and agree the pair; do not infer account access from public documentation. |
 | Approval received while writes remain prohibited | Keep approved content in chat, report not yet saved, request mode exit; never begin implementation. |
+| Codex submits `Implement the plan.` when approving a `planner plan` | Treat it as approval, not a mode switch; after writes are permitted save the plan and stop without executor setup or code changes. |
 | `implement` with no file or an unapproved draft | Explain that planning/approval is required; do not implement or manufacture approval evidence. |
 | `implement` while Plan Mode remains enabled | Read-only setup can proceed, but no implementation or progress writes until mode exit. |
 | HEAD differs or affected code has changed | Compare actual components and assumptions, including dirty changes; do not accept or reject solely by HEAD. |
