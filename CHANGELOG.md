@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Prefer a permitted interactive question tool for session setting confirmation,
+  including asynchronous questions when supported by the host.
 - Name planning sessions `Plan P: <task>` and implementation sessions
   `Plan I: <task>` when the host exposes a permitted title control; otherwise
   suggest the title.

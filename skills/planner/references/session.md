@@ -20,12 +20,19 @@ Before substantive investigation or implementation:
    If either active value cannot be determined, state which values are unknown
    and ask the user to check the picker/status and confirm whether it shows
    the expected pair, for example: "Does the picker show Terra / medium?"
-   Offer a clear yes / no choice using the host's question tool when available
-   and permitted, otherwise ask in chat. A yes confirms the pair as user-reported;
+   Use an available, permitted interactive question tool with selectable answers
+   instead of ending the turn with a plain-text question. In Codex, use the
+   tool appropriate to the current mode: a synchronous question tool when
+   exposed, or an asynchronous question tool when exposed and permitted. Offer
+   choices such as "Yes, it matches" and "No, it differs"; let the user provide
+   a different answer. If no suitable question tool is available or permitted,
+   ask in chat and explain the limitation. A yes confirms the pair as user-reported;
    on no, ask for the actual values and whether to keep them or switch. If only
    one value is unknown, ask about that value without re-confirming the known
    one. Do not invent supported options or claim an unverified match. Wait for
-   the answer before dependent work; a preselected option is not an answer.
+   the answer before dependent work; a preselected option is not an answer. For
+   an asynchronous question, keep the question pending and only continue
+   independent work until the answer arrives; do not treat elapsed time as consent.
 4. If a change is needed, use a native, session-scoped mechanism only if it is
    exposed to you. Otherwise give manual instructions and wait for the user's
    confirmation before substantive work. Merely printing a slash command or

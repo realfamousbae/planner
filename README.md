@@ -246,6 +246,9 @@ that the setting is active. When switching requires manual action, the skill
 waits for confirmation. Displaying a command does not execute it. Persistent
 global preferences are not changed.
 
+When the host exposes a suitable question tool, the confirmation uses selectable
+answers; otherwise the skill asks in chat.
+
 Local implementation decisions are autonomous. Changes to scope, architecture,
 or public interfaces are discussed and recorded before dependent work continues.
 Stages, real check results, and the next action are written back to `PLANNER.md`,
